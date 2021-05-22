@@ -1,18 +1,4 @@
-/** \file bugExample.cpp
- *  \brief     A little with logical bugs in it
- *  \details   This program is littered with logical bugs. Your task is the
- *              following:
- *                1) Compile and run the program.
- *                2) For each bug you find you must fix the bug then Check In
- *                   the code with a comment on the fix you did
- *                3) There are a three functions that are not completed, you need to
- *                   complete them and also update the menu and the main function
- *  \author    Harald Gjermundrod
- *  \version   0.1
- *  \date      2017-2017
- *  \bug       Many logical bugs
- *  \copyright University of Nicosia.
- */
+
 #include <iostream>
 #include <cassert>
 using namespace std;
@@ -86,6 +72,7 @@ int main() {
 	return 0;
 }
 
+
 /**
  * <code>printMenu</code> shows a menu and accepts the choice
  * from the user which is returned.
@@ -148,27 +135,6 @@ void multArrays(const int arrQuantity[], const int arrPrice[], double arrTotal[]
 		arrTotal[i] = double(arrQuantity[i] * (arrPrice[i] + VAT));
 	}
 }
-
-/**
- * <code>displayArray</code> prints the value of each of the elements of the
- * array. In addition the function sums up the value of all the elements and
- * print the total.
- * <BR>
- * @param ar The array containing the values
- * @param size The size of the array.
- */
-
-void displayArray(const int arr[], const int size) {
-	int sum = 0;
-
-	for (int i = 1; i < size; ++i) {
-		cout << "\nValue at " << i << ": " << arr[i];
-		sum += arr[i];
-	}
-
-	cout << "\nThe total is: " << sum;
-}
-
 // Sums the odd numbers in the array and returns the result
 int sumOddArray(const int arr[], const int size) {
 	int sum = 0;
